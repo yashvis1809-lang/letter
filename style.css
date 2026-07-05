@@ -359,6 +359,9 @@ opacity:0;
     transform:rotateY(180deg);
 
 }
+.card.flipped .card-inner{
+    transform: rotateY(180deg);
+}
 
 /* ========================= */
 
