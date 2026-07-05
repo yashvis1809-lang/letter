@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="proposal-page">
+
+    <div id="dots">
+
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+
+    </div>
+
+    <div id="proposal" class="hidden">
+
+    <h1 id="q1" class="hidden-line">
+        Will you
+    </h1>
+
+    <h1 id="q2" class="hidden-line">
+        be my
+    </h1>
+
+    <h1 id="q3" class="hidden-line">
+        boyfriend?
+    </h1>
+
+    <div class="proposal-buttons hidden-line" id="proposalButtons">
+
+        <button class="yes-btn" onclick="window.location.href='yes.html'">
+            ♡ Yes.
+        </button>
+
+        <button class="yes-btn" onclick="window.location.href='yes.html'">
+            ♡ Of course.
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script>
+
+const dots = document.getElementById("dots");
+const proposal = document.getElementById("proposal");
+
+setTimeout(()=>{
+
+    dots.style.opacity="0";
+
+},2200);
+
+setTimeout(()=>{
+
+    dots.style.display="none";
+
+    proposal.classList.remove("hidden");
+
+},2800);
+
+setTimeout(()=>{
+
+    document.getElementById("q1").classList.remove("hidden-line");
+
+},3200);
+
+setTimeout(()=>{
+
+    document.getElementById("q2").classList.remove("hidden-line");
+
+},4300);
+
+setTimeout(()=>{
+
+    document.getElementById("q3").classList.remove("hidden-line");
+
+},5400);
+
+setTimeout(()=>{
+
+    document.getElementById("proposalButtons").classList.remove("hidden-line");
+
+},6700);
+
+</script>
+
+</body>
+
+</html>
